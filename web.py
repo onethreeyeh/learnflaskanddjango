@@ -10,5 +10,9 @@ def index():
 def whoami():
 	return render_template("whoami.html")
 
+@app.route("/dailylog")
+def dailylog():
+	return render_template("dailylog.html")
+
 if __name__ == '__main__':
 	app.run()	
